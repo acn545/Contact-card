@@ -1,0 +1,57 @@
+#wrapper{
+    width:970px;
+    margin: 0px auto;
+    background: linear-gradient(rgb(100, 100, 248), rgb(85, 84, 84));
+}
+form{
+    background-color: rgb(214, 214, 214);
+    box-shadow: 3px 3px grey;
+    border: 1px black solid;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+
+    }
+    form li{
+        margin: 10px;
+        list-style-type: none;
+        position: relative;
+        right: 40px;
+    }
+    #desc{
+        width: 220px;
+        height: 100px;
+        margin: 0px 10px 10px 10px;
+        
+    }
+    form p{
+        margin-left: 10px;
+    }
+    form h2{
+        margin-left: 10px;
+    }
+    #submit{
+        display: block;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 10px 5px 10px;
+        background: linear-gradient(yellow, rgb(247, 246, 217));
+    }
+#contacts{
+    background-color: rgb(214, 214, 214);
+    box-shadow: 3px 3px grey;
+    border: 1px black solid;
+    display: inline-block;
+    width: 400px;
+    position: relative;
+    left: 230px;
+    vertical-align: top;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    }
+    #newCont{
+        border: 3px solid black;
+        Padding: 10px;
+        margin: 10px;
+    }
+#back{
+    display: none;
+}

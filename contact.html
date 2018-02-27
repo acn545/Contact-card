@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Contact Cards</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               
+                $('form').submit(function(){
+                    saveContacts();
+                    return false;
+                });
+                function saveContacts() {
+                    var first = $( '#first' ).val();
+                    var last = $( '#last' ).val();
+                    var desc= $( '#desc' ).val();
+                    console.log(first + last + desc);
+                    $('#contacts').append('<div id="newCont"> <h3>' + first + " " + last + "</h3>" + "<p id='back'>" + desc + "</p></div>");
+                    var first = $( "" ).val();
+                    var last = $( "" ).val();
+                    var desc = $( "" ).val();
+                    return false;
+                    }
+                 $(document).on('click', '#newCont', function(){
+                    $(this).children().toggle();
+                    });
+                });
+                    
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <form>
+                <h2>Add Contacts Form</h2>
+                <ul>
+                    <li>       
+                        <label name="first_name">First Name:</label>
+                        <input id="first" type="text" name="first_name" >
+                    </li>
+                    <li>
+                        <label name="last_name">Last Name:</label>
+                        <input id="last" type="text" name="last_name" >
+                    </li>
+                </ul>
+                <p>Description:</p>
+                <input id="desc" type"textbox" name="description">
+                <input id="submit" type="submit" name="submit" value="Submit">
+            </form>
+            <div id="contacts">
+                <h2>All Contacts</h2>
+            </div>
+        </div>
+    </body>
+</html>
